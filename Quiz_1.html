@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina Q</title>
+    <style>
+        body {
+            font-family: 'arial', sans-serif; 
+
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.116);
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('fondo.gif');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .eye-image {
+            width: 600px;
+            height: 500px;
+            border-radius: 50%;
+            background-image: url('ojo.jfif');
+            background-size: cover;
+            background-position: center;
+            margin-right: 40px;
+            box-shadow: 0 4px 10px rgba(8, 8, 8, 0.747);
+            margin-right: 10px;
+            margin-left: 100px;
+        }
+
+        .text-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            text-align: left; 
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px black;
+            font-weight: bold;
+            text-align: center;  
+            width: 100%; 
+        }
+
+        .unete-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-left: 20px; 
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 300px;
+            margin-left: 20px; 
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 7px 0;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 15px;
+            background-color: #f8f8f8;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button img {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #f3eeee;
+        }
+
+        .divider-line {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            margin: 20px 0; 
+        }
+
+        /* Texto de términos con colores personalizados */
+        .terms-text {
+            font-size: 0.7rem;
+            margin-top: 10px;
+            text-align: left;
+            margin-left: 0; 
+        }
+
+        .terms-text a {
+            color: black; /* Texto en negro */
+            text-decoration: none;
+        }
+
+        .terms-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Aplicar el color morado solo a las palabras necesarias */
+        .terms-text a.purple {
+            color: purple; /* Texto morado */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="eye-image"></div>
+        <div class="text-section">
+            <h1><b>Lo que ocurre en este momento.</b></h1>
+            <div class="unete-text"><b>Unete</b></div> <!-- Alineado a la izquierda -->
+            <div class="buttons">
+                <button onclick="alert('Registrarse con Facebook')">
+                    <img src="facebook.png" alt="Facebook"> <b>Regístrate con Facebook</b>
+                </button>
+                <button onclick="alert ('Registrarse con Google')">
+                    <img src="google.png" alt="Google"> <b>Regístrate con Google</b>
+                </button>
+                <div class="divider-line"></div> <!-- La línea está ahora entre los botones -->
+                <button onclick="alert('Crear Cuenta')"><b>Crear Cuenta</b></button>
+            </div>
+            <div class="terms-text">
+                Al registrarte, aceptas los 
+                <a href="#" class="purple">Términos de servicio</a> y la 
+                <a href="#" class="purple">Política de <br> privacidad</a>, incluida la politica de
+                <a href="#" class="purple">uso de Cookies</a>,
+            </div>
+        </div>
+    </div>
+</body>
+</html>
